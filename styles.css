@@ -1,0 +1,153 @@
+/* Variables y configuración base */
+:root {
+    /* Colores */
+    --primary-color: #e24da4;
+    --secondary-color: #00FFB2;
+    --accent-color: #FF00E5;
+    --text-color: #ffffff;
+    --bg-color: #5b5b5b;
+    --card-bg: #1a1a1a;
+        
+    /* Sombras y efectos */
+    --card-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    --text-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.5);
+    
+    /* Espaciado */
+    --container-padding: 2rem;
+    --mobile-margin: 1rem;
+    --card-gap: 0.5rem;
+    --card-margin: 0.2rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  max-width: 300px;
+  margin: 20px;
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;    /* Centra horizontalmente */
+  flex-wrap: wrap;            /* Permite que pasen a otra línea si no caben */
+  gap: 20px;                  /* Espacio entre tarjetas */
+  padding: 20px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 600;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--bg-color);
+}
+
+/* Header y Navegación */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: flex-end;
+    min-height: 6.25rem;
+    backdrop-filter: blur(0.3125rem);
+    -webkit-backdrop-filter: blur(0.3125rem);
+}
+
+.nav-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+nav h1 {
+    font-weight: 800;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    color: white;
+    letter-spacing: 0.125rem;
+    line-height: 1;
+}
+
+.main-subtitle {
+    font-weight: 400;
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    color: #ffffff;
+    letter-spacing: 0.0625rem;
+    line-height: 1.4;
+    font-style: italic;
+    text-align: center;
+    padding: 0 2rem;
+    padding-top: 2rem;
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-subtitle.question {
+    font-style: normal;
+    font-weight: 500;
+}
+
+.main-subtitle strong {
+    font-weight: 700;
+    color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: #050404; /* color de fondo */
+  color: white; /* color del texto */
+}
+
+.footer-logo {
+  width: 60px;      /* O el tamaño que prefieras */
+  height: auto;      /* Mantiene proporción */
+  display: block;
+  margin: 10px auto; /* La centra horizontalmente */
+}
