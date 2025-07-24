@@ -47,7 +47,7 @@ Este proyecto es una página web que busca visibilizar y homenajear a escritoras
 ---
 
 ## Estructura del proyecto
-
+```
 / (raíz del proyecto)
 │
 ├── index.html # Archivo principal con el contenido HTML
@@ -59,7 +59,7 @@ Este proyecto es una página web que busca visibilizar y homenajear a escritoras
 ├── ana_grigórievna.jfif
 ├── eva_canel.jpg
 └── logotipo.png
-
+```
 ## Personalización
 
 - Puedes editar el archivo `index.html` para modificar o agregar más tarjetas de escritoras.
