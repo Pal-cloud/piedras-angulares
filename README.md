@@ -1,4 +1,5 @@
-Piedras Angulares 📖🖋
+## Piedras Angulares 📖🖋
+
 Un proyecto para visibilizar a las personas clave detrás de los grandes descubrimientos científicos y tecnológicos.
 
 Descripción del Proyecto
